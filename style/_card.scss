@@ -1,0 +1,110 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    .card {
+        position: relative;
+      
+        background: linear-gradient(180deg, hsl(213, 19%, 15%), hsl(216, 12%, 12%));
+        width: 80%;
+        height: 300px;
+        max-width: 290px;
+        border-radius: 1rem;
+        padding: 2rem;
+        box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+        transition: all 0.3s ease-in-out;
+
+        .home {
+            display: block;
+            .logo {
+                padding: 1.5rem;
+                transform: scale(0.6);
+                position: absolute;
+                border-radius: 50%;
+                border: none;
+                background-color: hsl(213, 19%, 20%);
+                top: 1rem;
+                left: 1rem;
+            }
+
+            .headling {
+                color: $white;
+                text-align: start;
+                font-weight: 400;
+                font-size: 1rem;
+                letter-spacing: 0.2rem;
+                margin-top: 5rem;
+            }
+
+            .paragraph {
+                margin-top: 1.5rem;
+                text-align: start;
+                color: $medium-gray;
+                font-size: 1.2rem;
+                line-height: 1.8rem;
+            }
+
+            .select-button {
+                ul {
+                    margin-top: 1.5rem;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    list-style: none;
+                    li {
+                        button {
+                            cursor: pointer;
+                            transition: all ease-in-out 0.3s;
+
+                            border-radius: 50%;
+                            border: none;
+                            padding: 1rem;
+                            transform: scale(1);
+                            font-weight: bold;
+                            color: $medium-gray;
+                            background-color: hsl(213, 19%, 20%);
+                        }
+
+                        button:hover {
+                            background-color: $orange;
+                            color: $white;
+                        }
+
+                        button:focus {
+                            background-color: $light-gray;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+
+            .button {
+                margin-top: 1rem;
+                button {
+                    background-color: $orange;
+                    text-align: center;
+                    margin-top: 1rem;
+                    color: $white;
+                    padding: 1rem;
+                    border: none;
+                    width: 100%;
+                    font-size: larger;
+                    font-weight: 600;
+                    letter-spacing: 0.2rem;
+                    text-transform: uppercase;
+                    border-radius: 2rem;
+                    cursor: pointer;
+                    transition: all ease-in-out 0.3s;
+                }
+
+                button:hover {
+                    background-color: $white;
+                    color: $orange;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.container {
+    .card {
+        .card-back {
+            display: none;
+            .thank-you-image {
+                transform: translateX(3rem) scale(0.8);
+                margin-bottom: 1rem;
+            }
+
+            .scores {
+                color: $orange;
+                text-align: center;
+                max-width: 140px;
+                transform: translateX(40% );
+                padding: .5rem;
+                font-size: 1.2rem;
+                border-radius: 2rem;
+                background-color: hsl(213, 19%, 20%);
+                margin-bottom: 2rem;
+
+            }
+
+            .thanks {
+                color: $white;
+                margin-bottom: 1rem;
+                letter-spacing: 0.2rem;
+                text-align: center;
+            }
+
+            .paragraph {
+                color: $medium-gray;
+                text-align: center;
+                font-size: 1.2rem;
+                line-height: 1.8rem;
+            }
+        }
+    }
+}
