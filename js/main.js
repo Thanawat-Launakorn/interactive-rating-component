@@ -7,32 +7,60 @@ const btn = document.getElementById('submit');
 const home = document.querySelector('.home');
 const thankyou = document.querySelector('.card-back');
 const score = document.getElementById('score');
+const animation = document.getElementById('animation');
+const error = document.getElementById('error');
+const generator = () => {
+    animation.style.animationPlayState = 'paused'
+}
 
+generator();
+let c = 0;
 btn_1.addEventListener('click', () => {
     score.innerText = `You selected 1 out of 5`
+    c++;
 })
 
 btn_2.addEventListener('click', () => {
     score.innerText = `You selected 2 out of 5`
+    c++;
+
 })
 
 btn_3.addEventListener('click', () => {
     score.innerText = `You selected 3 out of 5`
+    c++;
+
 })
 
 btn_4.addEventListener('click', () => {
     score.innerText = `You selected 4 out of 5`
+    c++;
+
 })
 
 btn_5.addEventListener('click', () => {
     score.innerText = `You selected 5 out of 5`
+    c++;
+
 })
+
+
+
+function changeDisplay() {
+    home.style.display = 'none';
+    thankyou.style.display = 'block';
+    error.style.display = 'none';
+}
+
+function errorMessage() {
+    error.style.display = 'block';
+   
+}
 
 btn.addEventListener('click', () => {
     console.log('clicked');
+    c > 0 ? changeDisplay() : errorMessage();
 
-    home.style.display = 'none';
-    thankyou.style.display = 'block';
 
 });
 
